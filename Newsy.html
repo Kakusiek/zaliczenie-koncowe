@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsy - La Liga 2023/2024</title>
+    <link rel="stylesheet" href="zaliczenie.css">
+    <style>
+        .news-section {
+            margin-bottom: 20px;
+        }
+        .news-content {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function toggleNews(section) {
+            var content = document.getElementById(section);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>La Liga 2023/2024</h1>
+            <nav>
+                <ul>
+                    <li><a href="zaliczenie.html">Strona Główna</a></li>
+                    <li><a href="Wyniki.html">Wyniki</a></li>
+                    <li><a href="Statystyki.html">Statystyki</a></li>
+                    <li><a href="Newsy.html">Newsy</a></li>
+                    <li><a href="Galeria.html">Galeria</a></li>
+                    <li><a href="Kontakt.html">Kontakt</a></li>
+                    <li><a href="Mapa.html">Mapa Witryny</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="news">
+            <div class="container">
+                <h2>Newsy</h2>
+                
+                <div class="news-section">
+                    <h3 onclick="toggleNews('transfer-news')">Najgłośniejsze newsy transferowe La Liga (kliknij aby rozwinąć)</h3>
+                    <div id="transfer-news" class="news-content">
+                        <p><strong>Transfer 1:</strong> Real Madryt pozyskał Juda Bellingham z klubu Borussia Dortmunt za sumę 120,00 mln €</p>
+                        <p><strong>Transfer 2:</strong> Barcelona sprzedała Ousmane Dembele do klubu PSG za sumę 50,00 mln €.</p>
+                        <p><strong>Transfer 3:</strong> Atletico Madryt sprzedał Matheusa Cunhie do klubu Wolverhampton za sumę 50,00 mln €</p>
+                        <p><strong>Transfer 4:</strong> Villarreal CF sprzedała Pau Torresa do klubu Aston Villa za sumę 33,00 mln €</p>
+                        <p><strong>Transfer 5:</strong> Barcelona pozyskała Vitora Roque z klubu Athletico-PR za sumę 40,00 mln €</p>
+                    </div>
+                </div>
+                
+                <div class="news-section">
+                    <h3 onclick="toggleNews('club-news')">Najświeższe newsy klubowe La Liga (kliknij aby rozwinąć)</h3>
+                    <div id="club-news" class="news-content">
+                        <p><strong>News Klubowy 1:</strong>Nowym trenerem Barcelony na następny sezon La Liga po ogłoszeniu odejścia Xaviego Hernadeza z tej funkcji został były trener Bayernu oraz Reprezentacji Niemiec Hansi Flick </p>
+                        <p><strong>News Klubowy 2:</strong> Aurélien Tchouameni kluczowy zawodnik Realu Madryt nie zagraja w finale ligi mistrzów przeciwko Borussi Dortmunt z powodu grypy</p>
+                        <p><strong>News Klubowy 3:</strong>Klub Real Madryt triumfuje po raz 36 w historii rozgrywek La Liga</p>
+                        <p><strong>News Klubowy 4:</strong>Leganda Realu Madryt Toni Kroos zdecydował się na zakończenie kareiery po euro 2024. Zawodnik ten rozegrał dla krówlewskich 463 spotkania w których zdobył 22 trofea</p>
+                        <p><strong>News Klubowy 5:</strong>Problemy w szatni FC Barcelony. Ostatnio jest głosno o konflikcie pomiędzy Victorem Roque a treneram Barcelony Xavim. 19 letni Brazylijczyk uważa że Xavi nie odzywa się do niego na treningach i ,że widać niechęć względam trnera do samego zawodnika oraz jest wściekły że dostaje zbyt małą ilośc minut na boisku</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>2023 La Liga 2023/2024. Wszelkie prawa zastrzeżone.</p>
+            <p>Strona wykorzystuje pliki cookies.</p>
+        </div>
+    </footer>
+</body>
+</html>
